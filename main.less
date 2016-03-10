@@ -6,7 +6,7 @@
 @logo-red-light: lighten(@logo-red, 70%);
 
 //TYPE VARIABLES
-@regular: 16px;
+@regular: 1em;
 @large: @regular * 1.5;
 @x-large: @large * 2;
 
@@ -17,11 +17,16 @@ body {
   color: @logo-red-light;
 }
 
+.page-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 h1 {
   margin-bottom: 20px;
   border-top: 15px solid @logo-red;
   font-family: 'Vibur', cursive;
-  font-size: @x-large;
+  font-size: @large;
   color: white;
 
   + h2 {
@@ -43,7 +48,7 @@ h2 {
 }
 
 img {
-  width: 300px;
+  width: 30%;
   margin: 20px 20px 20px 0;
   float: left;
 }
@@ -57,4 +62,22 @@ p {
     margin-right: 0;
   }
 
+}
+
+//BREAKPOINTS
+@media screen and (min-width: 550px) {
+  h1 {
+    font-size: @x-large;
+  }
+
+  .page-container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+  body {
+    font-size 1.2em;
+  }
 }

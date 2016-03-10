@@ -8,21 +8,24 @@
 
 <body>
 
-  <h1>Sherlock</h1>
+  <div class="page-container">
 
-  <h2>Is coming home tomorrow</h2>
+    <h1>Sherlock</h1>
 
-  <p>Pigments will scan source files in your project directories looking for colors and will build a palette with all of them. Then for each opened file, it will use the palette to evaluate the value of a given color. The legible source paths can be defined through various settings either at the global or per project level. By default colors in every file will be highlighted, to limit the display of colors to the desired filetype only please see the Defining Where Pigments Applies below.</p>
+    <h2>Is coming home tomorrow</h2>
 
-  <h1>Sherlock</h1>
+    <p>Pigments will scan source files in your project directories looking for colors and will build a palette with all of them. Then for each opened file, it will use the palette to evaluate the value of a given color. The legible source paths can be defined through various settings either at the global or per project level. By default colors in every file will be highlighted, to limit the display of colors to the desired filetype only please see the Defining Where Pigments Applies below.</p>
 
-  <p>Pigments supports out of the box most of the color transformations functions and expressions of the three biggest CSS pre-processors out there, namely LESS, Sass and Stylus. However, it doesn't mean pigments is able to parse and understand all of these languages constructs. For the moment, Pigments' aim is to support the widest range of usage, even if it implies reducing its ability to parse certain complex constructs. You can refer to the parser specs for an exhaustive list of the supported expressions.</p>
+    <h1>Sherlock</h1>
 
-  <img src="images/theremin.jpg" alt="Theremin" />
-  <p>Pigments rescans the text buffer once you stopped editing it, however as the process can be sometime expensive, it'll apply an extra delay after the dispatch of the did-stop-changing event before starting the scanning process. <img src="images/theremin.jpg" alt="Theremin" />This setting define the number of milliseconds to wait after the did-stop-changing event before starting to scan the buffer again. If your start typing in the buffer again in this interval, the rescan process will be aborted.</p>
+    <p>Pigments supports out of the box most of the color transformations functions and expressions of the three biggest CSS pre-processors out there, namely LESS, Sass and Stylus. However, it doesn't mean pigments is able to parse and understand all of these languages constructs. For the moment, Pigments' aim is to support the widest range of usage, even if it implies reducing its ability to parse certain complex constructs. You can refer to the parser specs for an exhaustive list of the supported expressions.</p>
 
-  <p>Pigments is able to follow variables uses up to a certain point, if a color refers to several variables whose values can't be evaluated (because they use unsupported language-specific features) the color will be flagged as invalid and not displayed. This can be problematic when it happens on the core components of a complex palette.</p>
+    <img src="images/theremin.jpg" alt="Theremin" />
+    <p>Pigments rescans the text buffer once you stopped editing it, however as the process can be sometime expensive, it'll apply an extra delay after the dispatch of the did-stop-changing event before starting the scanning process. <img src="images/theremin.jpg" alt="Theremin" />This setting define the number of milliseconds to wait after the did-stop-changing event before starting to scan the buffer again. If your start typing in the buffer again in this interval, the rescan process will be aborted.</p>
 
+    <p>Pigments is able to follow variables uses up to a certain point, if a color refers to several variables whose values can't be evaluated (because they use unsupported language-specific features) the color will be flagged as invalid and not displayed. This can be problematic when it happens on the core components of a complex palette.</p>
+
+  </div>
 </body>
 
 </html>

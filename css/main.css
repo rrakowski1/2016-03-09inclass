@@ -1,14 +1,18 @@
 body {
   background-color: #4d1919;
   font-family: 'IM Fell French Canon', serif;
-  font-size: 16px;
+  font-size: 1em;
   color: #ffcccc;
+}
+.page-container {
+  width: 90%;
+  margin: 0 auto;
 }
 h1 {
   margin-bottom: 20px;
   border-top: 15px solid #660000;
   font-family: 'Vibur', cursive;
-  font-size: 48px;
+  font-size: 1.5em;
   color: white;
 }
 h1 + h2 {
@@ -19,13 +23,13 @@ h1 + h2 {
   margin-top: -20px;
 }
 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
 }
 h2 + p {
   margin-top: 36px;
 }
 img {
-  width: 300px;
+  width: 30%;
   margin: 20px 20px 20px 0;
   float: left;
 }
@@ -34,4 +38,9 @@ p img {
   width: 100px;
   margin-left: 20px;
   margin-right: 0;
+}
+@media screen and (min-width: 550px) {
+  h1 {
+    font-size: 3em;
+  }
 }
