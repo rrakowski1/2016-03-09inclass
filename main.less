@@ -12,6 +12,7 @@
 
 body {
   background-color: @logo-red-mute;
+  font-family: 'IM Fell French Canon', serif;
   font-size: @regular;
   color: @logo-red-light;
 }
@@ -19,11 +20,13 @@ body {
 h1 {
   margin-bottom: 20px;
   border-top: 15px solid @logo-red;
+  font-family: 'Vibur', cursive;
   font-size: @x-large;
   color: white;
 
   + h2 {
     margin-top: -20px;
+    font-weight: bold;
   }
 }
 
@@ -34,8 +37,24 @@ h1 + h2 {
 h2 {
   font-size: @large;
 
-
   + p {
     margin-top: 36px;
   }
+}
+
+img {
+  width: 300px;
+  margin: 20px 20px 20px 0;
+  float: left;
+}
+
+p {
+
+  img {
+    float: right;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+
 }
